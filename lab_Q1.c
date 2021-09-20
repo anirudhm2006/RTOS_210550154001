@@ -77,7 +77,8 @@ void app_main(void)
    xTaskCreate(task_first,"task1",2048,NULL,20,NULL);
    xTaskCreate(task_second,"task2",2048,NULL,10,NULL);
    xTaskCreate(task_third,"task3",2048,NULL,20,NULL);
-
+    xTaskCreate(task_fourth, "task4", 2048, NULL, 5, NULL);
+    xTaskCreate(task_fifth, "task5", 2048, NULL, 3, NULL);
    while(1)
    {
            printf("[%d] Hello world!\n", i);
